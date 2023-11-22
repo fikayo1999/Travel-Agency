@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital@0;1&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto' , sans-serif;
+}
+
+nav {
+    display: flex;
+    padding: 20px 50px ;
+    /* background-color: rgb(165, 122, 42); */
+    background-color: rgba(22, 29, 3, .7);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: greenyellow;
+    font-weight: 600;
+}
+
+.logo {
+    background: linear-gradient(to right,greenyellow,rgb(81, 165, 42),greenyellow);
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: 900;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+ .btn {
+    background-color:greenyellow;
+    color: #161d03;
+    text-transform: capitalize;
+    /* border: 1px solid orangered; */
+    border-radius: 5px;
+    padding: 5px 16px;
+    font-size: 15px;
+    transition: all ease-in-out .3s;
+    box-shadow: rgb(243, 218, 172) ;
+}
+
+ .btn:hover {
+    color: #000;
+}
+
+nav .btn {
+    margin-right:100px ;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+    background-image: linear-gradient(to right,rgba(0,0,0,.3), rgba(0,0,0,.7)) ,url(https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header h1 {
+    background: linear-gradient(to right,#ADFF2E,#f3f3f3,#ADFF2E);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 3.5rem;
+    letter-spacing: 3.5px;
+    font-weight: 300;
+}
+
+header .btn {
+    font-size: 1.7rem;
+    padding: 10px 15px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-shadow: orangered;
+    color: #fff;
+    width: 30%;
+    word-spacing: 2px;
+}
+
+
+img {
+    width: 200px;
+    height: 220px;
+    transition: ease-in-out .4s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.section {
+    padding: 20px;
+    background-color: rgba(22, 29, 3, .8);
+}
+
+.section h2 {
+    background: linear-gradient(to right,greenyellow,rgb(81, 165, 42),greenyellow);
+    font-weight: 700;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+   font-size: 25px;
+   letter-spacing: 2px;
+   padding-bottom: 10px;
+}
+
+.destinations {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.destinations div p {
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.section-one div {
+    gap: 15px;
+}
+
+.section-one div iconify-icon {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.section-one div p {
+    color: grey;
+    font-size: 15px;
+}
+
+.section-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+    border: 1px solid #f3f3f3;
+    background-color: #f3f3f3;
+    padding: 30px;
+    gap: 25px;
+}
+
+.section-two {
+    font-size: 22px;
+}
+
+.section-two p {
+    font-size: 17px;
+}
+
+.section-two .enter {
+    display: flex;
+    gap: 20px;
+}
+
+.section-two .enter input[type="email"] {
+    padding: 25px 300px 25px 20px ;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+}
+
+::-webkit-input-placeholder {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.section-two .enter button[type="submit"] {
+    padding: 15px 40px;
+    border: none;
+    background-color: #161d03;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+footer .end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161d03;
+    padding: 30px;
+    gap: 10px;
+}
+
+.end div {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: .5rem;
+}
+
+footer .end h3 {
+    color: greenyellow;
+    font-size: 1.5rem;
+}
+
+footer .end ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: .8rem;
+}
+
+footer .end p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: greenyellow;
+    font-weight: 800;
+}
